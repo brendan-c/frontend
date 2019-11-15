@@ -14,7 +14,7 @@ export class TopRecipesDay extends Component {
               <Card.Img
                 variant="top"
                 src="/media/card-test-1.jpg"
-                className="img-fluid w-75 mx-auto"
+                className="img-fluid  mx-auto"
               />
               <Card.Body>
                 <Card.Title>
@@ -35,7 +35,7 @@ export class TopRecipesDay extends Component {
               <Card.Img
                 variant="top"
                 src="/media/card-test-2.jpg"
-                className="img-fluid w-75 mx-auto"
+                className="img-fluid  mx-auto"
               />
               <Card.Body>
                 <Card.Title>
@@ -56,7 +56,7 @@ export class TopRecipesDay extends Component {
               <Card.Img
                 variant="top"
                 src="/media/card-test-3.jpg"
-                className="img-fluid w-75 mx-auto"
+                className="img-fluid  mx-auto"
               />
               <Card.Body>
                 <Card.Title>
@@ -77,7 +77,7 @@ export class TopRecipesDay extends Component {
               <Card.Img
                 variant="top"
                 src="/media/card-test-4.jpeg"
-                className="img-fluid w-75 mx-auto"
+                className="img-fluid  mx-auto"
               />
               <Card.Body>
                 <Card.Title>
@@ -98,7 +98,7 @@ export class TopRecipesDay extends Component {
               <Card.Img
                 variant="top"
                 src="/media/card-test-5.jpeg"
-                className="img-fluid w-75 mx-auto"
+                className="img-fluid  mx-auto"
               />
               <Card.Body>
                 <Card.Title>

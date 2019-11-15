@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Architects+Daughter|Quicksand&display=swap");
-@import "./_variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,500,700&display=swap');
+@import './_variables.scss';
 
 // Changes the font site-wide
 * {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Heebo', sans-serif;
 }
 
 // Forces scrollbar to always be present, to combat the center being
@@ -41,8 +41,8 @@ a {
 
 // Style for horizontal rules
 hr {
-  border-bottom: 1px solid $teal;
-  opacity: 0.5;
+  border-bottom: 0.5px solid #c2c9ca;
+  opacity: 1;
 }
 
 // When toggling certain elements off the screen (e.g. "no nicotine" in calculator)
@@ -75,12 +75,14 @@ hr {
 
 // Gradient background for the navigation container
 .navigation-container {
-  background: $lighter-blue;
+  // background: $lighter-blue;
+  background: none;
   height: 10%;
   margin: 1em;
-  border: 2px solid $teal;
-  border-radius: 20px;
-  box-shadow: 8px 8px 20px $shadow-grey;
+  // border: 2px solid $teal;
+  border-bottom: 0.5px solid #cecece;
+  // border-radius: 20px;
+  // box-shadow: 8px 8px 20px $shadow-grey;
 }
 
 // On screen sizes below ~1200px width, the nav links look a little weird by
@@ -89,7 +91,8 @@ hr {
 .nav-link,
 .nav-item {
   align-self: center;
-  font-size: 1.4rem;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 // Styling for dropdown links in the nav
@@ -110,14 +113,14 @@ hr {
   & .dropdown-item.active,
   & .dropdown-item:active {
     background-color: inherit;
-    font-weight: 900;
+    font-weight: 500;
     color: $teal;
   }
 }
 
 // Styling for nav "brand" (MixNJuice "logo")
 .navbar-brand {
-  font-family: "Architects Daughter", cursive;
+  font-family: 'Architects Daughter', cursive;
   font-size: 3em;
 }
 
@@ -146,9 +149,9 @@ hr {
 // Changing disabled buttons to grey
 .btn-primary.disabled,
 .btn-primary:disabled {
-  color: gray("800");
-  background-color: gray("300");
-  border-color: gray("800");
+  color: gray('800');
+  background-color: gray('300');
+  border-color: gray('800');
 }
 
 // Changing the border of any form fields
@@ -171,7 +174,7 @@ hr {
 
 // Changing the background for the text next to an input field
 .input-group-text {
-  background-color: gray("200");
+  background-color: gray('200');
 }
 
 // Changing the column width of the ingredient percent input
@@ -182,9 +185,16 @@ hr {
 // Card titles
 .h5 {
   font-size: 1.1em;
-  font-weight: 900;
+  font-weight: 500;
 }
 
+.card {
+  margin-right: 0.9rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0.5rem !important;
+}
 // Card bodies
 .card-text {
   font-size: 0.9em;
@@ -193,7 +203,7 @@ hr {
 // Card headers
 .card-header {
   font-size: 1.4em;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 // Style for all inputs
@@ -202,7 +212,7 @@ input {
 }
 
 // Style for file inputs
-.custom-file-input[type="file"] {
+.custom-file-input[type='file'] {
   border: 1px solid $black;
   border-radius: 0.25rem;
   padding: 5px;
@@ -239,7 +249,7 @@ input {
     transition: none;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       width: 100%;
       transform: scaleX(0);
@@ -254,7 +264,7 @@ input {
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -268,13 +278,13 @@ input {
   }
 
   &:hover::after,
-  &:focus::after {
+  v &:focus::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
 
   &.active {
-    font-weight: 900;
+    font-weight: 500;
     color: $teal;
   }
 }
@@ -297,7 +307,7 @@ input {
 
   @media screen and (prefers-reduced-motion: reduce) {
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: 0;
@@ -311,7 +321,7 @@ input {
 
   @media screen and (prefers-reduced-motion: reduce) {
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       bottom: 0;
@@ -324,7 +334,7 @@ input {
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -412,5 +422,20 @@ input {
 }
 
 .image--logo {
-  width: 12rem;
+  width: 8rem;
+}
+
+.col {
+  margin: 1rem 0;
+}
+
+h2 {
+  text-align: left;
+  margin: 2rem 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
 }

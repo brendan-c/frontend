@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet';
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+// import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+// import { Link } from 'react-router-dom';
 
 import TopRecipesDay from 'components/Home/TopRecipesDay';
 import NewRecipes from 'components/Home/NewRecipes';
@@ -12,18 +13,18 @@ export default class Home extends Component {
     return (
       <Container>
         <Helmet title="Home" />
-        <Row className="text-center">
+        {/* <Row className="text-center">
           <Col>
             <h1>Welcome to MixNJuice!</h1>
             <p style={{ fontSize: '0.8em' }}>
               <Link to="#">Click here to customize your front page!</Link>
             </p>
           </Col>
-        </Row>
+        </Row> */}
         <TopRecipesDay />
-        <hr />
+        {/* <hr /> */}
         <NewRecipes />
-        <hr />
+        {/* <hr /> */}
         <FeaturedMixer />
       </Container>
     );

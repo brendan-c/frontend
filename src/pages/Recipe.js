@@ -228,7 +228,7 @@ export class Recipe extends Component {
                     <img
                       src="/media/card-test-1.jpg"
                       alt="card test"
-                      className="w-75"
+                      className="w-100"
                     />
                   </Col>
                   <Col md={{ span: 7 }} xs={{ span: 12 }}>
